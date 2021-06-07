@@ -1,4 +1,4 @@
-package javaproject;
+package project;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ public class Customer extends Stock {
         cmed.add(new Medicines(name, cost , quantity));
     }
 
-     Medicines search_medicine(String name){
+    Medicines search_medicine(String name){
         for(Medicines medicines: cmed){
             if(medicines.name.equalsIgnoreCase(name)){
                 return medicines;
